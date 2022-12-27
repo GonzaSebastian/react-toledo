@@ -12,30 +12,11 @@ h1 {
     color: #fff;
     animation:tracking-in-expand 3s cubic-bezier(.215,.61,.355,1.000) .8s both;
 }
-.btm {
+.buttons {
     display: flex;
-    /* flex-direction: row;
-    justify-content: space-evenly; */
     justify-content: center;
     gap: 1rem;
     width: 70%;
 }
-button {
-    background-color: rgba(255, 255, 255, 0.89);
-    font-weight: 600;
-    width: 250px;
-    margin-bottom: 1rem;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-}
-button:hover {
-    background-color: #eabd34;
-    transform: scale(1, 1.2);
-    animation:focus-in-expand-fwd .8s cubic-bezier(.25,.46,.45,.94) both;
-}
 
-
-@keyframes focus-in-expand-fwd{0%{letter-spacing:-.5em;transform:translateZ(-800px);filter:blur(12px);opacity:0}100%{transform:translateZ(0);filter:blur(0);opacity:1}}
 @keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
