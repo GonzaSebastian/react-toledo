@@ -3,15 +3,15 @@ import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <header>
-        <img src="./images/logomolber.png" />
+        <img src="./images/logomolber.png" alt="imagelogo" />
         <Navbar/>
         <p>
           Molber APP.
         </p>
       </header>
-    </div>
+    </>
   );
 }
 
