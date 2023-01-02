@@ -8,11 +8,11 @@ function App() {
       <header>
         <img src="./images/logomolber.png" alt="imagelogo" />
         <Navbar/>
-        <ItemListContainer greeting="¡BIENVENIDOS AL ECOMMERCE DE MOLBER!" />
-        <p>
-          Molber APP.
-        </p>
       </header>
+      <ItemListContainer greeting="¡BIENVENIDOS AL ECOMMERCE DE MOLBER!" />
+      <p>
+        Molber APP.
+      </p>
     </>
   );
 }
