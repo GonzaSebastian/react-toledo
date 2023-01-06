@@ -18,8 +18,11 @@ const ItemCount = ( {onAdd, stock} ) => {
     }
 
     const addCart = () => {
-        setCount(() => onAdd(count))
-        setCount(1)
+        if(stock != 0) {
+            setCount(() => onAdd(count))
+            setCount(1)
+        }
+
     }
 
     return (
