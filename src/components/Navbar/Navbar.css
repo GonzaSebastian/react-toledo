@@ -5,7 +5,7 @@
     align-items: center;
     font-family: 'Titillium Web', sans-serif;
 }
-h1 {
+.title {
     font-size: 50px;
     color: #fff;
     animation:tracking-in-expand 3s cubic-bezier(.215,.61,.355,1.000) .8s both;

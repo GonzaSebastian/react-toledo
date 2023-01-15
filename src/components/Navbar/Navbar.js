@@ -5,7 +5,7 @@ import Button from '../Button/Button'
 const Navbar = () => {
     return (
         <nav className='nav'>
-            <h1>Ecommerce Mol-ber </h1>
+            <h1 className='title'>Ecommerce Mol-ber </h1>
             <CartWidget />
             <div className="buttons">
                 <Button label="Estructura" />
