@@ -6,7 +6,7 @@ const products = [
         name: 'PGC 100 e0.9',
         price: '3500',
         description: 'Perfil de acero galvanizado de SteelFrame',
-        category: 'PGC',
+        category: 'estructura',
         img: '../assets/PGC.png',
         stock: '100',
     },
@@ -15,7 +15,7 @@ const products = [
         name: 'PLACA PLACO STD 12,5mm',
         price: '1500',
         description: '1,2m x 2,4m espesor 12,5mm. Placa de yeso Standard.',
-        category: 'PLACAS',
+        category: 'placas',
         img: '../assets/placaStd.jpg',
         stock: '100',
     },
@@ -24,7 +24,7 @@ const products = [
         name: 'FIELTRO LIVIANO 100',
         price: '4400',
         description: 'Rollo 1,2m x 11m',
-        category: 'AISLACION',
+        category: 'aislacion',
         img: '../assets/FL100.jpg',
         stock: '100',
     },
@@ -44,5 +44,13 @@ export const getProducts = () => {
         setTimeout(() => {
             resolve(products)
         }, 2000)
+    })
+}
+
+export const getProductsByCategory = (categoryId) => {
+    return new Promise ((resolve) => {
+        setTimeout(() => {
+            resolve(products.filter(prod => prod.category === categoryId))
+        },2000)
     })
 }

@@ -2,21 +2,25 @@ import './ItemListContainer.css'
 import ItemCount from '../ItemCount/ItemCount'
 import ItemList from '../ItemList/ItemList'
 import { useEffect, useState } from 'react'
-import { getProducts } from '../../asyncMock'
+import { getProducts, getProductsByCategory } from '../../asyncMock'
+import { useParams } from 'react-router-dom'
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
+    const { categoryId } = useParams()
 
     useEffect(() => {
-        getProducts().then((products) => {
+        const asyncFunction = categoryId ? getProductsByCategory : getProducts
+
+        asyncFunction(categoryId).then((products) => {
             setProducts(products)
         }).catch(error => {
             console.log(error);
         }).finally(() => {
             setLoading(false)
         })
-    }, [])
+    }, [categoryId])
 
     if (loading) {
         return <h2>CARGANDO</h2>

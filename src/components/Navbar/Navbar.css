@@ -17,4 +17,26 @@
     width: 70%;
 }
 
+/* ESTILOS BOTONES NAVBAR */
+.btn {
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.89);
+    font-weight: 600;
+    width: 250px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+}
+.btn:hover {
+    background-color: #eabd34;
+    animation:focus-in-expand-fwd .8s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+
+@keyframes focus-in-expand-fwd{0%{letter-spacing:-.5em;transform:translateZ(-800px);filter:blur(12px);opacity:0}100%{transform:translateZ(0);filter:blur(0);opacity:1}}
+
 @keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
