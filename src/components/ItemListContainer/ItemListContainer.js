@@ -1,5 +1,4 @@
 import './ItemListContainer.css'
-import ItemCount from '../ItemCount/ItemCount'
 import ItemList from '../ItemList/ItemList'
 import { useEffect, useState } from 'react'
 import { getProducts, getProductsByCategory } from '../../asyncMock'
@@ -15,9 +14,11 @@ const ItemListContainer = ({ greeting }) => {
 
         asyncFunction(categoryId).then((products) => {
             setProducts(products)
-        }).catch(error => {
+        })
+        .catch(error => {
             console.log(error);
-        }).finally(() => {
+        })
+        .finally(() => {
             setLoading(false)
         })
     }, [categoryId])
@@ -30,8 +31,6 @@ const ItemListContainer = ({ greeting }) => {
         <>
             <h2 className="list">{greeting}</h2>
             <ItemList products={products} />
-            <ItemCount stock={4} onAdd={(count) => console.log('Se agregaron ' + count + ' productos al carrito.')} />
-
         </>
     )
 }
