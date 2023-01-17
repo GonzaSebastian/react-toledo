@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { getProductById } from "../../asyncMock"
 import ItemDetail from "../ItemDetail/ItemDetail"
+import './ItemDetailContainer.css'
 
 const ItemDetailContainer = () => {
   const { productId } = useParams()
@@ -15,7 +16,7 @@ const ItemDetailContainer = () => {
   }, [productId])
   
   return (
-    <div>
+    <div className="listDetail">
       <h2>Detalle de producto {product.name}</h2>
       <ItemDetail {...product} />
     </div>

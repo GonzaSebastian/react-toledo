@@ -1,4 +1,4 @@
-.cart {
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,6 +11,6 @@
     padding-top: .5rem;
 }
 
-.cartImg{
+.cardImg{
     width: 90%;
 }

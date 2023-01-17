@@ -8,7 +8,7 @@ const products = [
         description: 'Perfil de acero galvanizado de SteelFrame',
         category: 'estructura',
         img: '../assets/PGC.png',
-        stock: '100',
+        stock: '4',
     },
     {
         id: '2',
@@ -17,7 +17,7 @@ const products = [
         description: '1,2m x 2,4m espesor 12,5mm. Placa de yeso Standard.',
         category: 'placas',
         img: '../assets/placaStd.jpg',
-        stock: '100',
+        stock: '7',
     },
     {
         id: '3',
@@ -26,7 +26,7 @@ const products = [
         description: 'Rollo 1,2m x 11m',
         category: 'aislacion',
         img: '../assets/FL100.jpg',
-        stock: '100',
+        stock: '4',
     },
     {
         id: '4',
@@ -35,7 +35,7 @@ const products = [
         description: 'Italflex acrilico texturado grano medio x 30 KG.',
         category: 'revestimientos',
         img: '../assets/italflex.jpg',
-        stock: '100',
+        stock: '6',
     }
 ]
 
