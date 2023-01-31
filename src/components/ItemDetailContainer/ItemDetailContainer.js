@@ -9,6 +9,10 @@ const ItemDetailContainer = () => {
   const [product, setProduct] = useState({})
 
   useEffect(() => {
+    document.title=`Molber App - Detalle del producto`
+  },[])
+
+  useEffect(() => {
     getProductById(productId).then(response => {
       setProduct(response)
     })
