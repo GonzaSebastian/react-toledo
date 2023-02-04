@@ -1,6 +1,7 @@
 .Cart {
     background-color: #eabd34;
     font-size: 25px;
+    text-decoration: none;
     width: 70px;
     position:relative;
     left: 40%;
