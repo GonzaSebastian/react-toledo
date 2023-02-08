@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className="buttons">
                 <Link to='/category/estructura' className='btn'>Estructura</Link>
                 <Link to='/category/placas' className='btn'>Placas</Link>
-                <Link to='/category/aislacion' className='btn'>Aislación</Link>
+                <Link to='/category/aislación' className='btn'>Aislación</Link>
                 <Link to='/category/revestimientos' className='btn'>Revestimientos</Link>
             </div>
         </nav>

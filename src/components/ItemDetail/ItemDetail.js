@@ -10,7 +10,6 @@ const ItemDetail = ({id, img, price, name, description, stock }) => {
   const { addItem } = useContext(CartContext)
 
   const handleOnAdd = (count) => {
-    console.log('se agrego' + count);
 
     setQuantity(count)
 
@@ -28,7 +27,7 @@ const ItemDetail = ({id, img, price, name, description, stock }) => {
         <footer>
           {
             quantity > 0 ? (
-              <Link to='/Cart'> Finalizar compra</Link>
+              <Link to='/Cart'> Ir al carrito</Link>
             ) : (
               <ItemCount stock={stock} onAdd={handleOnAdd} />
             )
