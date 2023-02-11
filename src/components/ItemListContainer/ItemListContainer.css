@@ -1,9 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 
 
 .list {
     text-align: center;
-    font-family: 'Titillium Web', sans-serif;
     font-size: 35px;
-    text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);;
+    text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
 }
+
+.loading {
+    /* display: flex; */
+    text-align: center;
+    font-size: 2rem;
+    height: 20rem;
+    -webkit-animation: text-blur-out 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite reverse both;
+    animation: text-blur-out 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite reverse both;
+}
+
+@-webkit-keyframes text-blur-out {
+    0% {
+      -webkit-filter: blur(0.01);
+              filter: blur(0.01);
+    }
+    100% {
+      -webkit-filter: blur(12px) opacity(0%);
+              filter: blur(12px) opacity(0%);
+    }
+  }
+  @keyframes text-blur-out {
+    0% {
+      -webkit-filter: blur(0.01);
+              filter: blur(0.01);
+    }
+    100% {
+      -webkit-filter: blur(12px) opacity(0%);
+              filter: blur(12px) opacity(0%);
+    }
+  }

@@ -1,17 +1,20 @@
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget'
-import Button from '../Button/Button'
+import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { CartContext } from '../../Context/CartContext'
 
 const Navbar = () => {
+    const { totalQuantity } = useContext(CartContext)
     return (
         <nav className='nav'>
-            <h1>Ecommerce Mol-ber </h1>
-            <CartWidget />
+            <h1 className='title'>Ecommerce Mol-ber </h1>
+            <CartWidget quantity={totalQuantity} />
             <div className="buttons">
-                <Button label="Estructura" />
-                <Button label="Placas" />
-                <Button label="Aislación" />
-                <Button label="Revestimientos y terminaciones" />
+                <Link to='/category/estructura' className='btn'>Estructura</Link>
+                <Link to='/category/placas' className='btn'>Placas</Link>
+                <Link to='/category/aislación' className='btn'>Aislación</Link>
+                <Link to='/category/revestimientos' className='btn'>Revestimientos</Link>
             </div>
         </nav>
     )

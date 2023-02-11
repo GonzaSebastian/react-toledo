@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
-
 .Cart {
     background-color: #eabd34;
     font-size: 25px;
+    text-decoration: none;
     width: 70px;
     position:relative;
     left: 40%;
@@ -11,7 +10,6 @@
     border-radius: 5px;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
     margin-bottom: 1rem;
-    font-family: 'Titillium Web', sans-serif;
 }
 .imgCarrito {
     width: 20px;
