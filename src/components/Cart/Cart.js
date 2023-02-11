@@ -1,3 +1,4 @@
+import './Cart.css';
 import { useContext } from "react"
 import { CartContext } from "../../Context/CartContext"
 import CartList from "../CartList/CartList"
@@ -8,9 +9,9 @@ const Cart = () => {
 
   return (
     <div>
-      <h2>Carrito ({totalQuantity})</h2>
+      <h2 className='cartContainer'>Carrito ({totalQuantity})</h2>
       <CartList cart={cart} />
-      <Link to='/checkout'>Finalizar compra</Link>
+      <Link className='btn cartContainer' to='/checkout'>Finalizar compra</Link>
     </div>
   )
 }

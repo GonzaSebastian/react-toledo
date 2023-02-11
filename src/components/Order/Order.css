@@ -1,0 +1,28 @@
+.orderNotification {
+  color:#000000;
+  align-items: center;
+  width: 100%;
+  background-color: #c0c0c085;
+  border-radius: 5px;
+  text-align: center;
+  
+}
+
+.orderContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnOrder {
+  color: #000000;
+  background-color: rgba(255, 231, 113, 0.589);
+  font-weight: 600;
+  width: 250px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+}
